@@ -1,0 +1,162 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+    background: #82b9e6;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    width: 100%;
+}
+
+/* HEADER */
+
+#header{
+    background: #f4f4f4;
+    overflow: hidden;
+    color: darkmagenta;
+    padding: 20px;
+}
+
+#header h1{
+    font-size: 2.5rem;
+    letter-spacing: 10px;
+}
+
+#header .desc{
+    font-size: 1.3rem;
+    margin-bottom: 50px;
+}
+
+#header .input p{
+    font-size: 12px;
+}
+
+#header input[type="text"]{
+    width: 40%;
+    padding: 8px;
+    border: none;
+    font-size: 1rem;
+}
+
+#header input[type="text"]:hover{
+    border: 2px solid cornflowerblue;
+}
+
+
+/* APP FORM */
+
+#app{
+    padding: 20px;
+    margin-top: 10px;
+}
+
+#app input[type='text']{
+    width: 60%;
+}
+
+#app input[type='text'], #app input[type='submit'] {
+    border: none;
+    padding: 10px;
+}
+
+#app input[type='submit']{
+    background: darkmagenta;
+    color: white;
+    cursor: pointer;
+}
+
+/* APP UL */
+
+#items{
+    list-style: none;
+    width: 60%;
+    margin: auto;
+    margin-top: 25px;
+}
+
+#items li{
+    padding: 20px;
+    border-bottom: 2px solid white;
+    width: 100%;
+    margin: auto;
+    letter-spacing: 3px;
+}
+
+li .item{
+    float: left;
+}
+
+.delete{
+    float: right;
+    border: none;
+    padding: 5px;
+    background: #fff;
+    color: #82b9e6;
+    font-size: 1rem;
+}
+
+.delete:hover{
+    padding: 7px;
+    cursor: pointer;
+    background: #4848ff;
+    color: #fff;
+}
+
+.check{
+    float: left;
+}
+
+#content{
+    width: 100%;
+}
+
+/* APP BOTTOM TEXT */
+
+#app p{
+    font-size: 1.5rem;
+    margin-top: 50px;
+    letter-spacing: 5px;
+}
+
+footer{
+    padding: 25px;
+    color: #fff;
+    background: #666;
+    width: 100%;
+}
+
+/* MEDIA QUERY */
+
+@media(max-width: 680px) {
+    #app{
+        padding: 0;
+    }
+    #header{
+        padding: 5px;
+    }
+    #header #filter{
+        display: block;
+        width: 100%;
+    }
+    #app input[type="text"],
+    #app input[type=submit],
+    #items{
+        width: 100%;
+    }
+    #num-todos h2{
+        font-size: 1.2rem;
+    }
+    .hide{
+        display: none;
+    }
+    .show{
+        display: block;
+        width: 100%;
+        font-size: 2rem;
+    }
+}
